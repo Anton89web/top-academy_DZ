@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Module_1_Week_4</title>
+</head>
+<body>
+
+    <div class="container position-absolute top-50 start-50 translate-middle">
+        <div class="row">
+            <div class="col-4 offset-3">
+                <form id="first" action="">
+                <p>
+                    1. Написать функцию, которая принимает 2 числа и возвращает -1, если первое меньше, чем второе; 1 – если первое больше, чем второе; и 0 – если числа равны.
+                </p>
+                <label class="form-label"  for="userInput">Введите первое число</label>
+                <input type="number" id="userInput" class="form-control" name="userInput">
+                <label class="form-label"  for="userInput">Введите второе число</label>
+                <input type="number" id="userInput1_2" class="form-control" name="userInput2">
+                <input id="btn" class="btn btn-success my-2" type="button" value="Показать ответ">
+                <p id="userOutput"></p>
+                </form>
+                
+                <form id="second"  style="display:none;">
+                    <p>
+                        2. Написать функцию, которая вычисляет факториал переданного ей числа.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите  число</label>
+                    <input type="number" id="userInput2" class="form-control" name="userInput">
+                    <input id="btn2" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput2"></p>
+                </form>
+                
+                <form id="third"  style="display:none;">
+                    <p>
+                        3. Написать функцию, которая принимает отдельные цифры и превращает их в одно число. Например: цифры 1, 4, 9 превратятся в число 149.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите цифры </label>
+                    <input type="text"  id="userInput3" class="form-control" name="userInput">
+                    <input id="btn3" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput3"></p>
+                </form>
+
+                <form id="fourth"  style="display:none;">
+                    <p>
+                        4. Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его площадь. Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите длину прямоугольника</label>
+                    <input type="text" id="userInput4" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите ширину прямоугольника</label>
+                    <input type="text" id="userInput4_1" class="form-control" name="userInput">
+                    <input id="btn4" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput4"></p>
+                </form>
+
+
+                <form id="five"  style="display:none;">
+                    <p>
+                        5. Написать функцию, которая проверяет, является ли переданное ей число совершенным. Совершенное число – это число, равное сумме всех своих собственных делителей.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите  число</label>
+                    <input  type="number" id="userInput5" class="form-control" name="userInput">
+                    <input id="btn5" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput5"></p>
+                </form>
+
+                <form id="six"  style="display:none;">
+                    <p>
+                        6. Написать функцию, которая принимает минимальное и максимальное значения для диапазона, и выводит только те числа из диапазона, которые являются совершенными. Используйте написанную ранее функцию, чтобы узнавать, совершенное число или нет.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите  начало диапазона </label>
+                    <input  type="text" id="userInput6" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите  конец диапазона </label>
+                    <input  type="text" id="userInput6_2" class="form-control" name="userInput">
+                    <input id="btn6" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput6"></p>
+                </form>
+
+                <form id="seven"  style="display:none;">
+                    <p>
+                        7. Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран в формате «чч:мм:сс». Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите время (часы, минуты, секунды)</label>
+                    <input type="text" id="userInput7" class="form-control" name="userInput">
+                    <input id="btn7" class="btn btn-success my-2" type="button" value="Показать время">
+                    <p id="userOutput7"></p>
+                </form>
+
+                <form id="eight"  style="display:none;">
+                    <p>
+                        8. Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в секундах.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите время(часы, минуты, секунды)</label>
+                    <input type="text" id="userInput8" class="form-control" name="userInput">
+                    <input id="btn8" class="btn btn-success my-2" type="button" value="Показать время в секундах">
+                    <p id="userOutput8"></p>
+                </form>
+
+                <form id="nine"  style="display:none;">
+                    <p>
+                        9. Написать функцию, которая принимает количество секунд, переводит их в часы, минуты и секунды и возвращает в виде строки «чч:мм:сс».
+                    </p>
+                    <label class="form-label"  for="userInput">Введите количество секунд</label>
+                    <input type="text" id="userInput9" class="form-control" name="userInput">
+                    <p><input id="btn9" class="btn btn-success my-2" type="button" value="Показать время"></p>
+                    <p id="userOutput9"></p>
+                </form>
+
+                <form id="ten"  style="display:none;">
+                    <p>
+                        10. Написать функцию,которая считает разницу между датами. Функция принимает 6 параметров, которые описывают 2 даты, и возвращает результат в виде строки «чч:мм:сс». При выполнении задания используйте функции из предыдущих 2-х заданий: сначала обе даты переведите в секунды, узнайте разницу в секундах, а потом разницу переведите обратно в «чч:мм:сс».
+                    <p>
+                    <label class="form-label"  for="userInput">Введите время(часы, минуты, секунды)</label>
+                    <input type="text" id="userInput10" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите время(часы, минуты, секунды)</label>
+                    <input type="text" id="userInput10_1" class="form-control" name="userInput">
+                    <p id="userOutput10"></p>
+                    <input id="btn10" class="btn btn-success my-2" type="button" value="Узнать разницу">
+                </form>
+           
+                <navi aria-label="Page navigation example">
+                    <ul id ="pagination" class="pagination">
+                        <li class="page-item">
+                          <input data-question="first" type="button" class="page-link" value="1">
+                        </li>
+                        <li class="page-item">
+                          <input data-question="second" type="button" class="page-link" value="2">
+                        </li>
+                        <li class="page-item">
+                          <input data-question="third" type="button" class="page-link" value="3">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="fourth" type="button" class="page-link" value="4">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="five" type="button" class="page-link" value="5">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="six" type="button" class="page-link" value="6">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="seven" type="button" class="page-link" value="7">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="eight" type="button" class="page-link" value="8">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="nine" type="button" class="page-link" value="9">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="ten" type="button" class="page-link" value="10">
+                        </li>
+                    </ul>
+                </navi>
+            </div>
+        </div>
+    </div>
+    
+  
+    
+    
+<script src="script.js"></script>
+
+
+</body>
+</html>
+

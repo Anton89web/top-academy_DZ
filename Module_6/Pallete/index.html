@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Палитра</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row mb-3">
+        <div class="col-4 offset-4">
+            <h1 class="text-center">Палитра</h1>
+            <form id="colorForm" action="index.html" method="post">
+                <div class="mb-3">
+                    <label for="colorname" class="form-label">Название: </label>
+                    <span id="colorname-error" class="text-danger"></span>
+                    <input id="colorname" class="form-control" name="colorname">
+                </div>
+                <div class="mb-3">
+                    <label for="type" class="form-label">Тип: </label>
+                    <select name="type" id="type">
+                        <option value="RGB">RGB</option>
+                        <option value="RGBA">RGBA</option>
+                        <option value="HEX">HEX</option>
+                    </select>
+                    <span id="type-error" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="code" class="form-label">Код: </label>
+                    <span id="code-error" class="text-danger"></span>
+                    <input id="code" class="form-control" name="code">
+                </div>
+                <button class="btn btn-primary">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="pallet" class="row row-cols-sm-1 row-cols-md-3 row-cols-lg-3"></div>
+</div>
+
+<script src="color.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Module_2_Week_1</title>
+</head>
+<body>
+
+    <div class="container position-absolute top-50 start-50 translate-middle">
+        <div class="row">
+            <div class="col-10 offset-3">
+                <form id="first" action="">
+                <p>
+                   
+                    <h4>Задание 1</h4> 
+                     Создать массив «Список покупок». Каждый элемент массива является объектом, который содержит название продукта, необходимое количество и куплен или нет. Написать несколько функций для работы с таким массивом.<br>
+                     1. Вывод всего списка на экран таким образом, чтобы сначала шли некупленные продукты, а потом – купленные.<br>
+                     2. Добавление покупки в список. Учтите, что при добавлении покупки с уже существующим в списке продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую.<br>
+                     3. Покупка продукта. Функция принимает название продукта и отмечает его как купленный.<br>
+                    
+                </p>
+                <label class=" form-label"  for="userInput">Введите название продукта</label>
+                <input type="text"  class=" form-control name-input col-4" name="userInput" placeholder="Товар">
+                <label class="form-label"  for="userInput">Введите количество продукта</label>
+                <input type="number"  class="form-control number-input col-4" name="userInput" placeholder="В чифрах">
+                <label class="form-label"  for="userInput">Продукт уже куплен?</label>
+                <input type="text" class="form-control check col-4" name="userInput" placeholder="Да или Нет">
+                <input id="btn" class="btn btn-success my-2" type="button" value="Показать список продуктов">
+                <input id="btnadd" class="btn btn-success my-2" type="button" value="Добавить товар в список">
+                <input id="btnbuy" class="btn btn-success my-2" type="button" value="Отметить купленный товар">
+                <ul class="user-output"></ul>
+                </form>
+                
+                <form id="second"  style="display:none;">
+                    <p>
+
+                        <h4>Задание 2</h4>
+                         Создать массив, описывающий чек в магазине. Каждый элемент массива состоит из названия товара, количества и цены за единицу товара. Написать следующие функции.<br>
+                         1. Распечатка чека на экран.<br>
+                         2. Подсчет общей суммы покупки.<br>
+                         3. Получение самой дорогой покупки в чеке.<br>
+                         4. Подсчет средней стоимости одного товара в чеке.
+
+                    </p>
+                   
+                    <input id="btn2" class="btn btn-success my-2" type="button" value="Показать чек">
+                    <input id="btn2-1" class="btn btn-success my-2" type="button" value="Общая сумма">
+                    <input id="btn2-2" class="btn btn-success my-2" type="button" value="Самая дорогая покупка">
+                    <input id="btn2-3" class="btn btn-success my-2" type="button" value="Средняя стоимость">
+                    <ul id="userOutput2"></ul>
+                </form>
+                
+                <form id="third"  style="display:none;">
+                    <p>
+
+                        <h4>Задание 3</h4>
+                        Создать массив css-стилей (цвет, размер шрифта, выравнивание, подчеркивание и т.д.). Каждый элемент массива – это объект, состоящий из двух свойств: название стиля и значение стиля.
+                         Написать функцию, которая принимает массив стилей и текст, и выводит этот текст с помощью document.write() в тегах &lt;p&gt;&lt;/p&gt;, добавив в открывающий тег атрибут style со всеми стилями, перечисленными в массиве.
+                    </p>
+                    <label class="form-label"  for="userInput">Введитe текст</label>
+                    <input type="text" max="24"  id="userInput3" class="form-control" name="userInput">
+                    <input id="btn3" class="btn btn-success my-2" type="button" value="Вывести строку">
+                    <input id="btn3-2" class="btn btn-success my-2" type="button" value="Применить стили">                    
+                    <p id="userOutput3"></p>
+                </form>
+
+                <form id="four"  style="display:none;">
+                    <p>
+
+                        <h4>Задание 4</h4>
+                            Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена.
+                            Написать несколько функций для работы с ним.<br>
+                            1. Вывод на экран всех аудиторий.<br>
+                            2. Вывод на экран аудиторий для указанного факультета.<br>
+                            3. Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета.<br>
+                            4. Функция сортировки аудиторий по количеству мест.<br>
+                            5. Функция сортировки аудиторий по названию (по алфавиту).<br>
+                    </p>
+                    <label class="form-label"  for="userInput4">Введите название</label>
+                    <input type="text"  id="userInput4" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите количество студентов</label>
+                    <input type="number"  id="userInput4_1" class="form-control" name="userInput">
+                    <label class="form-label" p  for="userInput_2">Введите название факультета</label>
+                    <input type="text"  id="userInput4_2" placeholder="WEB, PYTHON, GAMEDEV" class="form-control" name="userInput">
+                    <input id="btn4" class="btn btn-success my-2" type="button" value="Показать все аудитории">
+                    <input id="btn4-1" class="btn btn-success my-2" type="button" value="Показать аудитории для указанного факультета" >
+                    <input id="btn4-2" class="btn btn-success my-2" type="button" value="Показать аудитории для созданной группы">
+                    <input id="btn4-3" class="btn btn-success my-2" type="button" value="Сортировка по количеству мест">
+                    <input id="btn4-4" class="btn btn-success my-2" type="button" value="Сортировка по названию аудиторий">
+                </form>
+                <div style = "display: flex; flex-wrap: wrap;" id="userOutput4"></div>
+
+                
+                <navi aria-label="Page navigation example">
+                    <ul id ="pagination" class="pagination">
+                        <li class="page-item">
+                          <input data-question="first" type="button" class="page-link" value="1">
+                        </li>
+                        <li class="page-item">
+                          <input data-question="second" type="button" class="page-link" value="2">
+                        </li>
+                        <li class="page-item">
+                          <input data-question="third" type="button" class="page-link" value="3">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="four" type="button" class="page-link" value="4">
+                          </li>
+                    </ul>
+                </navi>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
+

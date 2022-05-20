@@ -1,0 +1,18 @@
+.color{
+  /* background-color:attr(code); */
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height: 13rem;
+  font-size: 12px;
+}
+
+.color>div{
+  background-color:rgba(200,200,200,.5);
+  display:flex;
+  flex-basis: 70%;
+  flex-direction:column;
+  /* align:center; */
+  align-items: center;
+  padding: 30px;
+}

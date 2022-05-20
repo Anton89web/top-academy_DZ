@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Module_2_Week_1</title>
+</head>
+<body>
+
+    <div class="container position-absolute top-50 start-50 translate-middle">
+        <div class="row">
+            <div class="col-4 offset-3">
+                <form id="first" action="">
+                <p>
+                   
+                    Создать объект, описывающий автомобиль (производитель, модель, год выпуска, средняя скорость), и следующие функции для работы с этим объектом.
+                    1. Функция для вывода на экран информации об автомобиле.
+                    2. Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
+                    
+                </p>
+                <label class="form-label"  for="userInput">Введите расстояние</label>
+                <input type="number" id="userInput" class="form-control" name="userInput">
+                <input id="btn" class="btn btn-success my-2" type="button" value="Показать объект и время">
+                <p id="userOutput"></p>
+                </form>
+                
+                <form id="second"  style="display:none;">
+                    <p>
+
+                    Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом.
+                    1. Функция сложения 2-х объектов-дробей.
+                    2. Функция вычитания 2-х объектов-дробей.
+                    3. Функция умножения 2-х объектов-дробей.
+                    4. Функция деления 2-х объектов-дробей.
+                    5. Функция сокращения объекта-дроби.
+
+                    </p>
+                    <label class="form-label"  for="userInput">Введите числитель первой дроби</label>
+                    <input type="number" id="userInput2" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите знаменатель первой дроби</label>
+                    <input type="number" id="userInput2_1" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите числитель второй дроби</label>
+                    <input type="number" id="userInput2_3" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите знаменатель второй дроби</label>
+                    <input type="number" id="userInput2_4" class="form-control" name="userInput">
+                    <input id="btn2" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput2"></p>
+                </form>
+                
+                <form id="third"  style="display:none;">
+                    <p>
+
+                        Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом.
+                        1. Функция вывода времени на экран.
+                        2. Функция изменения времени на переданное количество
+                        секунд.
+                        3. Функция изменения времени на переданное количество минут.
+                        4. Функция изменения времени на переданное количество часов.
+                        Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и другая. Например: если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не «20:30:75».
+
+                    </p>
+                    <label class="form-label"  for="userInput">Введите часы</label>
+                    <input type="number" max="24"  id="userInput3" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите минуты</label>
+                    <input type="number"  id="userInput3_1" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput_2">Введите секунды</label>
+                    <input type="number"  id="userInput3_2" class="form-control" name="userInput">
+                    <input id="btn3" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput3">Время: 0ч:0м:0с</p>
+                </form>
+
+                
+                </form>
+                <navi aria-label="Page navigation example">
+                    <ul id ="pagination" class="pagination">
+                        <li class="page-item">
+                          <input data-question="first" type="button" class="page-link" value="1">
+                        </li>
+                        <li class="page-item">
+                          <input data-question="second" type="button" class="page-link" value="2">
+                        </li>
+                        <li class="page-item">
+                          <input data-question="third" type="button" class="page-link" value="3">
+                        </li>
+                    </ul>
+                </navi>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
+

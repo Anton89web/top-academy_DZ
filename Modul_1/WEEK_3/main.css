@@ -1,0 +1,8 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 105px);
+    grid-template-rows: repeat(10, 30px);
+    grid-auto-flow: column;
+    justify-content: center;
+    justify-items: start;
+}

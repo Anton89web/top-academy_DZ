@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Lesson8</title>
+</head>
+<body>
+
+    <div class="container position-absolute top-50 start-50 translate-middle">
+        <div class="row">
+            <div class="col-4 offset-3">
+                <form id="first" action="">
+                <p>
+                    Запросите у пользователя его имя и выведите в ответ: «Привет, его имя!».
+                </p>
+                <label class="form-label"  for="userInput">Введите ваше имя</label>
+                <input type="text" id="userInput" class="form-control" name="userInput">
+                <input id="btn" class="btn btn-success my-2" type="button" value="Показать ответ">
+                <p id="userOutput"></p>
+                </form>
+                
+                <form id="second"  style="display:none;">
+                    <p>
+                        Запросите у пользователя год его рождения, посчитайте, сколько ему лет и выведите результат. Текущий год укажите в коде как константу.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите дату вашего рождения</label>
+                    <input type="number" id="userInput2" class="form-control" name="userInput">
+                    <input id="btn2" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput2"></p>
+                </form>
+                
+                <form id="third"  style="display:none;">
+                    <p>
+                        Запросите у пользователя длину стороны квадрата и выведите периметр такого квадрата.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите длину стороны квадрата</label>
+                    <input type="text" id="userInput3" class="form-control" name="userInput">
+                    <input id="btn3" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput3"></p>
+                </form>
+
+                <form id="fourth"  style="display:none;">
+                    <p>
+                        Запросите у пользователя радиус окружности и выведите площадь такой окружности.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите радиус окружности</label>
+                    <input type="text" id="userInput4" class="form-control" name="userInput">
+                    <input id="btn4" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput4"></p>
+                </form>
+
+
+                <form id="five"  style="display:none;">
+                    <p>
+                        Запросите у пользователя расстояние в км между двумя городами и за сколько часов он хочет добраться. Посчитайте скорость, с которой необходимо двигаться, чтобы успеть вовремя.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите расстояние между городами в км</label>
+                    <input  type="text" id="userInput5" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите за сколько часов Вы хотите добраться</label>
+                    <input type="text" id="userInput5_2" class="form-control" name="userInput">
+                    <input id="btn5" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput5"></p>
+                </form>
+
+                <form id="six"  style="display:none;">
+                    <p>
+                        Реализуйте конвертор валют. Пользователь вводит доллары, программа переводит в евро. Курс валюты храните в константе.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите количество долларов</label>
+                    <input type="text" id="userInput6" class="form-control" name="userInput">
+                    <input id="btn6" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput6"></p>
+                </form>
+
+                <form id="seven"  style="display:none;">
+                    <p>
+                        Пользователь указывает объем флешки в Гб. Программа должна посчитать сколько файлов размером в 820 Мб помещается на флешку.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите объем флешки</label>
+                    <input type="text" id="userInput7" class="form-control" name="userInput">
+                    <input id="btn7" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput7"></p>
+                </form>
+
+                <form id="eight"  style="display:none;">
+                    <p>
+                        Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит сколько шоколадок может купить пользователь и сколько сдачи у него останется..
+                    </p>
+                    <label class="form-label"  for="userInput">Введите сумму в кошельке</label>
+                    <input type="text" id="userInput8" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите цену шоколадки</label>
+                    <input type="text" id="userInput8_2" class="form-control" name="userInput_2">
+                    <input id="btn8" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput8"></p>
+                </form>
+
+                <form id="nine"  style="display:none;">
+                    <p>
+                        Запросите у пользователя трехзначное число и выведите его задом наперед. Для решения задачи вам понадобится оператор % (остаток от деления)..
+                    </p>
+                    <label class="form-label"  for="userInput">Введите трехзначное число</label>
+                    <input type="text" id="userInput9" class="form-control" name="userInput">
+                    <input id="btn9" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput9"></p>
+                </form>
+
+                <form id="ten"  style="display:none;">
+                    <p>
+                         Запросите у пользователя целое число и выведите в ответ, четное число или нет. В задании используйте логические операторы. В задании не надо использовать if или switch..
+                    </p>
+                    <label class="form-label"  for="userInput">Введите целое число</label>
+                    <input type="text" id="userInput10" class="form-control" name="userInput">
+                    <input id="btn10" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput10"></p>
+                </form>
+           
+                <navi aria-label="Page navigation example">
+                    <ul id ="pagination" class="pagination">
+                        <li class="page-item">
+                          <input data-question="first" type="button" class="page-link" value="1">
+                        </li>
+                        <li class="page-item">
+                          <input data-question="second" type="button" class="page-link" value="2">
+                        </li>
+                        <li class="page-item">
+                          <input data-question="third" type="button" class="page-link" value="3">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="fourth" type="button" class="page-link" value="4">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="five" type="button" class="page-link" value="5">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="six" type="button" class="page-link" value="6">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="seven" type="button" class="page-link" value="7">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="eight" type="button" class="page-link" value="8">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="nine" type="button" class="page-link" value="9">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="ten" type="button" class="page-link" value="10">
+                        </li>
+                    </ul>
+                </navi>
+            </div>
+        </div>
+    </div>
+    
+  
+    
+    
+<script src="script.js"></script>
+
+
+</body>
+</html>
+

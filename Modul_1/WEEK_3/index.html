@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Lesson8</title>
+</head>
+<body>
+
+    <div class="container position-absolute top-50 start-50 translate-middle">
+        <div class="row">
+            <div class="col-4 offset-3">
+                <form id="first" action="">
+                <p>
+                    1. Подсчитать сумму всех чисел в заданном пользователем диапазоне.
+                </p>
+                <label class="form-label"  for="userInput">Введите диапазон чисел через дефис (n-n)</label>
+                <input type="text" id="userInput" class="form-control" name="userInput">
+                <input id="btn" class="btn btn-success my-2" type="button" value="Показать ответ">
+                <p id="userOutput"></p>
+                </form>
+                
+                <form id="second"  style="display:none;">
+                    <p>
+                        2. Запросить 2 числа и найти только наибольший общий делитель.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите первое число</label>
+                    <input type="number" id="userInput2" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput2">Введите второе число</label>
+                    <input type="number" id="userInput2_2" class="form-control" name="userInput">
+                    <input id="btn2" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput2"></p>
+                </form>
+                
+                <form id="third"  style="display:none;">
+                    <p>
+                        3. Запросить у пользователя число и вывести все делители этого числа.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите ваше число </label>
+                    <input type="number"  id="userInput3" class="form-control" name="userInput">
+                    <input id="btn3" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput3"></p>
+                </form>
+
+                <form id="fourth"  style="display:none;">
+                    <p>
+                        4. Определить количество цифр в введенном числе.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите число</label>
+                    <input type="text" id="userInput4" class="form-control" name="userInput">
+                    <input id="btn4" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput4"></p>
+                </form>
+
+
+                <form id="five"  style="display:none;">
+                    <p>
+                        5. Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.
+                    </p>
+                    <label class="form-label"  for="userInput">Введите 10  чисел</label>
+                    <input  type="text" id="userInput5" class="form-control" name="userInput">
+                    <input id="btn5" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput5"></p>
+                </form>
+
+                <form id="six"  style="display:none;">
+                    <p>
+                        6. Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить пример, вывести результат и спросить, хочет ли он решить еще один пример. И так до тех пор, пока пользователь не откажется.
+                    </p>
+                    <input id="btn6" class="btn btn-success my-2" type="button" value="Запустить калькулятор">
+                    <p id="userOutput6"></p>
+                </form>
+
+                <form id="seven"  style="display:none;">
+                    <p>
+                        7. Запросить у пользователя число и на сколько цифр его сдвинуть. Сдвинуть цифры числа и вывести результат (если число 123456 сдвинуть на 2 цифры, то получится 345612)
+                    </p>
+                    <label class="form-label"  for="userInput">Введите число</label>
+                    <input type="text" id="userInput7" class="form-control" name="userInput">
+                    <label class="form-label"  for="userInput">Введите на сколько его сдвинуть</label>
+                    <input type="text" id="userInput7_2" class="form-control" name="userInput">
+                    <input id="btn7" class="btn btn-success my-2" type="button" value="Показать ответ">
+                    <p id="userOutput7"></p>
+                </form>
+
+                <form id="eight"  style="display:none;">
+                    <p>
+                        8. Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть следующий день?» и так до тех пор, пока пользователь нажимает OK.
+                    </p>
+                    <!-- <label class="form-label"  for="userInput">Введите день недели</label>
+                    <input type="number" id="userInput8" class="form-control" name="userInput"> -->
+                    <input id="btn8" class="btn btn-success my-2" type="button" value="Запустить программу">
+                    <p id="userOutput8"></p>
+                </form>
+
+                <form id="nine"  style="display:none;">
+                    <p>
+                        9. Вывести таблицу умножения для всех чисел от 2 до 9. Каждое число необходимо умножить на числа от 1 до 10.
+                    </p>
+                    <!-- <label class="form-label"  for="userInput">Запустить программу</label> -->
+                    <p><input id="btn9" class="btn btn-success my-2" type="button" value="Показать таблицу умножения"></p>
+
+                    <div class="grid" id="userOutput9"></div>
+                </form>
+
+                <form id="ten"  style="display:none;">
+                    <p>
+                        10. Игра «Угадай число». Загадайте число от 0 до 1000 и в зависимости от предложенного варианта, нажмите соответсвующую кнопку.
+                    <p>
+                    <p id="userOutput10"></p>
+                    <input id="btn+" class="btn btn-success my-2" type="button" value="Больше">
+                    <input id="btn=" class="btn btn-success my-2" type="button" value="Равно">
+                    <input id="btn-" class="btn btn-success my-2" type="button" value="Меньше">
+                    <input id="btn10" class="btn btn-success my-2" type="button" value="Запустить игру">
+                </form>
+           
+                <navi aria-label="Page navigation example">
+                    <ul id ="pagination" class="pagination">
+                        <li class="page-item">
+                          <input data-question="first" type="button" class="page-link" value="1">
+                        </li>
+                        <li class="page-item">
+                          <input data-question="second" type="button" class="page-link" value="2">
+                        </li>
+                        <li class="page-item">
+                          <input data-question="third" type="button" class="page-link" value="3">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="fourth" type="button" class="page-link" value="4">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="five" type="button" class="page-link" value="5">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="six" type="button" class="page-link" value="6">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="seven" type="button" class="page-link" value="7">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="eight" type="button" class="page-link" value="8">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="nine" type="button" class="page-link" value="9">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="ten" type="button" class="page-link" value="10">
+                        </li>
+                    </ul>
+                </navi>
+            </div>
+        </div>
+    </div>
+    
+  
+    
+    
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
