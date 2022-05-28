@@ -6,22 +6,9 @@ function AddPallet() {
             this.type = type;
             this.code = code;
         }
-
-        createStrColor() {
-            let strColor = "";
-
-            if (this.type === "RGB") {
-                strColor = `rgb(${this.code})`;
-            } else if (this.type === "RGBA") {
-                strColor = `rgba(${this.code})`;
-            } else if (this.type === "HEX") {
-                strColor = `#${this.code}`;
-            }
-            return strColor;
-        }
     }
 
-   function createColor(item) {
+    function createColor(item) {
         let strColor = "";
 
         if (item.type === "RGB") {
@@ -42,52 +29,16 @@ function AddPallet() {
             name: "Yellowsreen".toUpperCase(),
             type: "RGB",
             code: "154, 205, 50",
-            createStrColor() {
-                let strColor = "";
-
-                if (this.type === "RGB") {
-                    strColor = `rgb(${this.code})`;
-                } else if (this.type === "RGBA") {
-                    strColor = `rgba(${this.code})`;
-                } else if (this.type === "HEX") {
-                    strColor = `#${this.code}`;
-                }
-                return strColor;
-            }
         },
         {
             name: "Darkcyan".toUpperCase(),
             type: "RGBA",
-            code: "0, 139, 139, 1",
-            createStrColor() {
-                let strColor = "";
-
-                if (this.type === "RGB") {
-                    strColor = `rgb(${this.code})`;
-                } else if (this.type === "RGBA") {
-                    strColor = `rgba(${this.code})`;
-                } else if (this.type === "HEX") {
-                    strColor = `#${this.code}`;
-                }
-                return strColor;
-            }
+            code: "0, 139, 139, .5",
         },
         {
             name: "Orangered".toUpperCase(),
             type: "HEX",
             code: "FF4500",
-            createStrColor() {
-                let strColor = "";
-
-                if (this.type === "RGB") {
-                    strColor = `rgb(${this.code})`;
-                } else if (this.type === "RGBA") {
-                    strColor = `rgba(${this.code})`;
-                } else if (this.type === "HEX") {
-                    strColor = `#${this.code}`;
-                }
-                return strColor;
-            }
         },
     ];
 
@@ -99,8 +50,11 @@ function AddPallet() {
             pallet.insertAdjacentHTML('beforeend', div);
         }));
     }
-    if (sessionStorage.getItem("arr")){
+
+    if (sessionStorage.getItem("arr")) {
         innerDiv(JSON.parse(sessionStorage.getItem("arr")));
+        palletDiv = JSON.parse(sessionStorage.getItem("arr"));
+        console.log(palletDiv);
     } else {
         innerDiv(palletDiv);
     }
@@ -139,8 +93,7 @@ function AddPallet() {
 
             if (!name) {
                 error_name.textContent = 'Вы не заполнили это поле';
-            }
-            if (!code) {
+            } else if (!code) {
                 error_code.textContent = 'Вы не заполнили это поле';
             } else if ((name.match(/[^A-z]/g) !== null)) {
                 error_name.textContent = "Название может содержать только латинские буквы";
@@ -159,16 +112,14 @@ function AddPallet() {
         }
         valid(name, type, code);
 
-
-
-        
-        
-        sessionStorage.setItem('arr', JSON.stringify(palletDiv));
-        
+        let arr = [];
+        palletDiv.forEach(element => {
+            arr.push(element);
+        });
+        sessionStorage.setItem('arr', JSON.stringify(arr));
         arr = JSON.parse(sessionStorage.getItem("arr"));
-        
         console.log(arr);
-        innerDiv(arr); 
+        innerDiv(palletDiv);
     });
 }
 AddPallet();
