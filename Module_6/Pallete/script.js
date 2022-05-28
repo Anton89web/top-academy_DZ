@@ -8,7 +8,7 @@ function AddPallet() {
         }
     }
 
-    function createColor(item) {
+   function createColor(item) {
         let strColor = "";
 
         if (item.type === "RGB") {
@@ -51,7 +51,7 @@ function AddPallet() {
         }));
     }
 
-    if (sessionStorage.getItem("arr")) {
+    if (sessionStorage.getItem("arr")){
         innerDiv(JSON.parse(sessionStorage.getItem("arr")));
         palletDiv = JSON.parse(sessionStorage.getItem("arr"));
         console.log(palletDiv);
@@ -93,7 +93,8 @@ function AddPallet() {
 
             if (!name) {
                 error_name.textContent = 'Вы не заполнили это поле';
-            } else if (!code) {
+            }
+            else if (!code) {
                 error_code.textContent = 'Вы не заполнили это поле';
             } else if ((name.match(/[^A-z]/g) !== null)) {
                 error_name.textContent = "Название может содержать только латинские буквы";
@@ -119,7 +120,7 @@ function AddPallet() {
         sessionStorage.setItem('arr', JSON.stringify(arr));
         arr = JSON.parse(sessionStorage.getItem("arr"));
         console.log(arr);
-        innerDiv(palletDiv);
+        innerDiv(palletDiv); 
     });
 }
 AddPallet();
