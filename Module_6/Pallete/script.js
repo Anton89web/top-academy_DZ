@@ -42,7 +42,6 @@ function AddPallet() {
         },
     ];
 
-
     function innerDiv(arr) {
 
         arr.forEach((element => {
@@ -113,10 +112,7 @@ function AddPallet() {
         }
         valid(name, type, code);
 
-        let arr = [];
-        palletDiv.forEach(element => {
-            arr.push(element);
-        });
+        let arr = [...palletDiv];
         sessionStorage.setItem('arr', JSON.stringify(arr));
         arr = JSON.parse(sessionStorage.getItem("arr"));
         console.log(arr);
