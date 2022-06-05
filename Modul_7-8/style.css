@@ -1,0 +1,45 @@
+form{
+    width: 600px;
+    margin: 100px auto;
+    background-color: rgb(250, 248, 248);
+    border: 1px solid rgb(203, 201, 201);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.films__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+h4{
+    text-align: center;
+}
+
+.pagination{
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.modal-header{
+   justify-content: center;
+}
+.modal-body{
+    display: flex;
+}
+
+.modal-dialog {
+    max-width: 1000px;
+    margin: 1.75rem auto;
+}
+
+.modal-body img{
+    width: 450px;
+}
+
+.modal-body p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
