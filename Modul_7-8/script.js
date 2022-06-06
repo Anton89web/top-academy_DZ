@@ -19,12 +19,12 @@ function getElement(search, type, page) {
         .then(response => response.json())
         .catch(() => {
             console.log(error);
-        })    
+        })
         .then(json => {
             content = json.Search;
             console.log(json);
-            if (json.Error){
-              alert(json.Error); 
+            if (json.Error) {
+                alert(json.Error);
             } else {
                 parseContent(content);
                 parsePagination(json.totalResults / 10);
@@ -42,6 +42,7 @@ function parseContent(content) {
             `<div class="card" style="width: 20rem;">
         <img src=${e.Poster} class="card-img-top" alt="Постер для ${e.Title} отсутсвует :(">
         <div class="card-body">
+        <p style="display: none">${e.imdbID}</p>
           <h5 class="card-title">${e.Title}</h5>
           <p class="card-text">Тип: ${e.Type}</p>
           <p class="card-text">Год: ${e.Year}</p>
@@ -76,9 +77,9 @@ function changePage(event) {
             e.preventDefault();
             if (e.target.tagName == 'A' && !e.target.classList.contains('next') && !e.target.classList.contains('previous')) {
                 page = `${e.target.textContent}`;
-            } else if (e.target.classList.contains('next')){
+            } else if (e.target.classList.contains('next')) {
                 page++;
-            } else if (e.target.classList.contains('previous')){
+            } else if (e.target.classList.contains('previous')) {
                 page--;
             }
             console.log(searchName.value, select.value, e.target.textContent, page);
@@ -96,14 +97,17 @@ function fullInfo() {
     });
 }
 
-
 function getFullInfo(search) {
-    fetch(`https://www.omdbapi.com/?apikey=221cf632&t=${search}&type=movie&page=3&plot=full`)
+    fetch(`https://www.omdbapi.com/?apikey=221cf632&i=${search}`)
         .then(response => response.json())
         .then(json => {
-            content = json.Search;
-            console.log(json);
-            parseFullContent(json);
+            if (json.Error) {
+                alert(json.Error);
+            } else {
+                content = json.Search;
+                console.log(json);
+                parseFullContent(json);
+            }
         });
 }
 
@@ -117,7 +121,7 @@ function parseFullContent(content) {
           </div>
           <div class="modal-body">
           <div class="modal-body">
-          <img src=${content.Poster} class="card-img-top" alt="...">
+          <img src=${content.Poster} class="card-img-top" alt="Постер для ${content.Title} отсутсвует :(">
           </div>
           <div class="dody__text">
           <p class="card-text"><b>Тип:</b> ${content.Type}</p>
