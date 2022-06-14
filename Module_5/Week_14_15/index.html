@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Module_4_Week_13</title>
+</head>
+
+<body>
+
+    <div class="container position-absolute top-50 start-50 translate-middle">
+        <div class="row">
+            <div class="col-10 offset-3">
+                <form id="first" action="">
+                    <p>
+                        <h4>Задание 1</h4>
+                        Создать html-страницу со списком сообщений на форуме и формой для добавления нового сообщения. После заполнения формы добавить сообщение к списку на экране.
+                    </p>
+                    <div class="forum bg">
+                        <div class="forum__text-wrapper">
+                            <div class="forum__text-title">
+                                <div class="text__name">Name</div>
+                                <div class="text__time"></div>
+                            </div>
+                            <div class="text__inner">
+                                <p class="text__area">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim inventore ipsa ab quia id laborum error tenetur ex dicta quaerat corrupti libero deleniti, similique natus, voluptas explicabo saepe vero debitis.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="newMessage__title">Добавить новое сообщение</p>
+                        <div class="newMessage__name-inner">
+                            <span class="name__title">Ваше имя:</span>
+                            <input type="text" class="input__name">
+                        </div>
+                        <div class="newMessage__message-inner">
+                            <span class="message__title">Ваше сообщение:</span>
+                            <p><textarea name="" id="" cols="85" rows="3"></textarea></p>
+                        </div>
+                        <button class="btn__message">Отправить</button>
+                        
+                    </div>
+                </form>
+
+                <form id="second" style="display:none;">
+                    <p>
+
+                        <h4>Задание 2</h4>
+                        Создать html-страницу для прохождения теста. Вопросы теста имеют два варианта ответа (только 1 правильный). После прохож- дения теста, вывести количество правильных ответов.
+                    </p>
+
+                    <div class="victorina">
+                            <p class="question">Cколько книг в цикле "Ведьмак"</p>
+                            <div>
+                                <input type="checkbox" id="q1-1" name="scales">
+                                <label>8</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="q1-2" name="scales">
+                                <label>7</label>
+                            </div>
+                            <button class="question__btn">Следующий</button>
+                    </div>
+                    <div class="victorina">
+                        <p class="question">К какой школе ведьмаков принадлежит Геральт</p>
+                        <div>
+                            <input type="checkbox" id="q1-1" name="scales">
+                            <label>Школа "Кота"</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="q1-2" name="scales">
+                            <label>Школа "Волка"</label>
+                        </div>
+                        <button class="question__btn">Результаты</button>
+                </div>
+                </form>
+
+
+
+                <form id="third" style="display:none;">
+                    <p>
+                        <h4>Задание 3</h4>
+                        Создать html-страницу с формой для ввода стилизованного текста. После заполнения формы, вывести текст на экран в соот- ветствии с указанными стилями.
+                    </p>
+
+                    <div class="form__style bg">
+                        <div class="checkbox__inner">
+                            <input type="checkbox" id="q1-1" name="scales">
+                            <label>Bold</label>
+                            <input type="checkbox" id="q1-1" name="scales">
+                            <label>Underline</label>
+                            <input type="checkbox" id="q1-1" name="scales">
+                            <label>Italic</label>
+                            <input type="checkbox" id="q1-1" name="scales">
+                            <label>Left</label>
+                            <input type="checkbox" id="q1-1" name="scales">
+                            <label>Right</label>
+                            <input type="checkbox" id="q1-1" name="scales">
+                            <label>Justify</label>
+                        </div>
+                        <div class="form__style-area">
+                            <textarea name="" id="" cols="80" rows="3"></textarea>
+                        </div>
+                        <button class="form__style-btn"> Показать текст</button>
+                    </div>
+
+                </form>
+
+                <form id="four" style="display:none;">
+                    <p>
+                        <h4>Задание 4</h4>
+                        Создать html-страницу для магазина книг.
+Пользователь должен иметь возможность выбрать книгу, указать количество экземпляров, ввести свое имя, дату доставки, адрес доставки и комментарий.
+После заполнения формы необходимо вывести на экран: «Имя покупателя, спасибо за заказ. Такой-то товар будет доставлен в такую-то дату по такому-то адресу».
+                    </p>
+                    <div class="wrapper__card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Заголовок карточки</h5>
+                              <p class="card-text">Небольшой пример текста, который должен основываться на названии карты и составлять основную часть содержимого карты.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">An item</li>
+                              <li class="list-group-item">A second item</li>
+                              <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Ссылка карточки</a>
+                              <a href="#" class="card-link">Другая ссылка</a>
+                            </div>
+                          </div>
+
+                          <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Заголовок карточки</h5>
+                              <p class="card-text">Небольшой пример текста, который должен основываться на названии карты и составлять основную часть содержимого карты.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">An item</li>
+                              <li class="list-group-item">A second item</li>
+                              <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Ссылка карточки</a>
+                              <a href="#" class="card-link">Другая ссылка</a>
+                            </div>
+                          </div>
+
+
+                          <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Заголовок карточки</h5>
+                              <p class="card-text">Небольшой пример текста, который должен основываться на названии карты и составлять основную часть содержимого карты.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">An item</li>
+                              <li class="list-group-item">A second item</li>
+                              <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Ссылка карточки</a>
+                              <a href="#" class="card-link">Другая ссылка</a>
+                            </div>
+                          </div>
+
+
+                          <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Заголовок карточки</h5>
+                              <p class="card-text">Небольшой пример текста, который должен основываться на названии карты и составлять основную часть содержимого карты.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">An item</li>
+                              <li class="list-group-item">A second item</li>
+                              <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Ссылка карточки</a>
+                              <a href="#" class="card-link">Другая ссылка</a>
+                            </div>
+                          </div>
+
+                    </div>
+
+                </form>
+
+                <form id="five" style="display:none;">
+                    <p>
+                        <h4>Задание 5</h4>
+                        Создать html-страницу с возможностью отмечать присутству- ющих на паре. Для начала пользователь выбирает группу и пару, дальше вводит тему занятия и отмечает присутствующих. Также добавить возможность посмотреть уже отмеченные пары. Хранить информацию в заранее подготовленных массивах.
+                    </p>
+
+                </form>
+
+                <form id="six" style="display:none;">
+                    <p>
+                        <h4>Задание 6</h4>
+                        Создать html-страницу с возможностью забронировать билеты на поезд. Для начала пользователь выбирает направление поезда и дату поездки, дальше отмечает места для брони. Также добавить возможность посмотреть уже забронированные билеты. Хранить информацию в заранее подготовленных массивах.
+                    </p>
+
+                </form>
+
+                <navi aria-label="Page navigation example">
+                    <ul id="pagination" class="pagination">
+                        <li class="page-item">
+                            <input data-question="first" type="button" class="page-link" value="1">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="second" type="button" class="page-link" value="2">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="third" type="button" class="page-link" value="3">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="four" type="button" class="page-link" value="4">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="five" type="button" class="page-link" value="5">
+                        </li>
+                        <li class="page-item">
+                            <input data-question="five" type="button" class="page-link" value="6">
+                        </li>
+                    </ul>
+                </navi>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

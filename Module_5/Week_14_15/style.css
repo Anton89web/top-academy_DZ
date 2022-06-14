@@ -1,0 +1,82 @@
+.bg{
+    background-color: rgb(242, 231, 231);
+    margin-bottom: 50px;
+}
+.forum__text-wrapper {
+    padding: 10px;
+}
+.forum__text-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: solid 1px rgb(128, 127, 127);
+}
+.text__inner {
+    border: solid 1px rgb(128, 127, 127);
+    padding: 10px;
+}
+.text__area {
+}
+.text__name {
+    font-size: 16px;
+}
+.text__time {
+}
+.newMessage__title {
+    text-align: center;
+}
+.input__name {
+    padding-left: 20px;
+    width: 83%;
+}
+.newMessage__message-inner, .newMessage__name-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.message__title {
+}
+.input__message {
+    padding-left: 20px;
+    width: 80%;
+}
+.btn__message {
+    width: 97%;
+    margin: 0 15px;
+    padding: 5px;
+    border: solid 1px rgb(128, 127, 127);
+    background-color: rgb(163, 159, 159);
+}
+
+.victorina {
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(233, 230, 230);
+}
+.question {
+    text-align: center;
+}
+.question__btn {
+}
+
+.wrapper__card{
+    display: flex;
+}
+
+.checkbox__inner{
+    text-align: center;
+}
+
+.checkbox__inner input{
+    margin-left: 10px;
+}
+
+.form__style-area{
+    text-align: center;
+}
+
+.form__style-btn{
+    display: block;
+    width: 77%;
+    margin: 0 auto;
+}
